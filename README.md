@@ -52,10 +52,9 @@ Helper scripts wrap the systemd commands:
 ```
 app.py                       # Flask server, motor + LED control
 templates/index.html         # Phone UI
+static/apple-touch-icon.png  # iOS home-screen icon
+generate_icon.py             # regenerates the icon
 test_servo.py                # Direct hardware check, bypasses Flask
 lego-ball-machine.service    # systemd unit
 *.sh                         # convenience scripts
-CLAUDE.md                    # in-depth notes (API, gotchas, etc.)
 ```
-
-See [CLAUDE.md](CLAUDE.md) for hardware-specific gotchas (e.g. `value()` vs `to_max/to_min` on the Geekservo + inventorhatmini 1.0.0 combo) and detailed endpoint docs.

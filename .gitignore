@@ -4,3 +4,9 @@ __pycache__/
 venv/
 .env
 .DS_Store
+
+# Internal working notes — local only
+CLAUDE.md
+working_output.md
+requirements.txt
+app.py.bk.py
