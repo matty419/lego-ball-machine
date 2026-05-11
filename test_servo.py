@@ -13,11 +13,13 @@ Run on the Pi:  sudo python3 test_servo.py
 """
 import time
 
-from inventorhatmini import InventorHATMini, SERVO_1, SERVO_2
+from inventorhatmini import InventorHATMini, SERVO_1, SERVO_2, SERVO_3, SERVO_4
 
 PORTS = [
     ("SERVO_1", SERVO_1),
     ("SERVO_2", SERVO_2),
+    ("SERVO_3", SERVO_3),
+    ("SERVO_4", SERVO_4),
 ]
 
 # (pulse_width_us, label)

@@ -40,7 +40,7 @@ Helper scripts wrap the systemd commands:
 
 | Script | Runs on | What it does |
 | --- | --- | --- |
-| `./sync.sh`    | Mac | Rsync the project to the Pi. |
+| `./sync.sh`    | Mac | Rsync the project to the Pi. Copy from `sync.sh.example` and set your SSH target. |
 | `./install.sh` | Pi  | Register the systemd service and start it. One-time. |
 | `./restart.sh` | Pi  | Restart after syncing new code. |
 | `./logs.sh`    | Pi  | Follow the service logs. |

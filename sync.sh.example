@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# Copy this file to sync.sh and edit the SSH target, then chmod +x sync.sh.
+# sync.sh is gitignored so your personal target stays local.
+set -euo pipefail
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+rsync -av --exclude='.git' --exclude='.venv' \
+  "$SCRIPT_DIR/" <user>@raspberrypi.local:~/lego-ball-machine/

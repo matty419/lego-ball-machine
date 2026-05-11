@@ -10,3 +10,6 @@ CLAUDE.md
 working_output.md
 requirements.txt
 app.py.bk.py
+
+# Personal sync target — copy sync.sh.example to sync.sh
+sync.sh
