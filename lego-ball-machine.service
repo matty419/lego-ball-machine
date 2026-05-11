@@ -1,0 +1,15 @@
+[Unit]
+Description=Lego Ball Machine Flask server
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/home/matt/lego-ball-machine
+ExecStart=/usr/bin/python3 /home/matt/lego-ball-machine/app.py
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
