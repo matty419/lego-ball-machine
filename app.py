@@ -71,8 +71,11 @@ def _apply_direction_locked(motor: Motor) -> None:
     # Direct pulse() — value(±1.0) lands inside the Geekservo's deadband
     # on inventorhatmini v1.0.0 and doesn't move it. pulse() works at
     # every width we've tested (confirmed via test_servo.py).
+    # The minus sign matches the physical rotation we want as default:
+    # direction=+1 (and LEDs green) spins the motor the way the machine
+    # needs to feed balls.
     offset = SPEED_OFFSET_US[motor.speed_level]
-    motor.servo.pulse(1500 + motor.direction * offset)
+    motor.servo.pulse(1500 - motor.direction * offset)
 
 
 def _start_motor_locked(motor: Motor) -> None:
